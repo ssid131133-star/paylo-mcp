@@ -1,0 +1,27 @@
+{
+  "name": "paylo-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that helps AI coding assistants (Claude Code, Cursor…) integrate Paylo payments: accurate docs, code snippets, and safe test-mode API actions.",
+  "type": "module",
+  "bin": {
+    "paylo-mcp": "dist/index.js"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.10"
+  }
+}
